@@ -1,6 +1,6 @@
 ;; ----------Package Management
  
-;; --- ฒๅผþิด ---------
+;; --- source ---------
  (when (>= emacs-major-version 24)
      (require 'package)
      (package-initialize)
@@ -145,7 +145,9 @@
 (global-set-key (kbd "M-x") 'smex)
  
  
- 
+ ;;git-emacs
+(add-to-list 'load-path "./git-emacs/")
+(require 'git-emacs)
  
 ;; ------ Common Set -----
 (global-hl-line-mode 1)
