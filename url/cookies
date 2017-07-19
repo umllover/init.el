@@ -1,0 +1,23 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '(("cn.bing.com"
+  [url-cookie "SRCHUID" "V=2&GUID=5E47084CA19C4FA08D98C1C0EFB3E13D" "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
+  [url-cookie "MUIDB" "2963F0157152693E2531FA9F70F368AE" "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
+  [url-cookie "httponly" nil "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil])
+ ("bing.com"
+  [url-cookie "httponly" nil "22-May-2019 08:25:04.00 GMT" "/" "bing.com" nil]
+  [url-cookie "_EDGE_V" "1" "22-May-2019 08:25:04.00 GMT" "/" "bing.com" nil]
+  [url-cookie "MUID" "2963F0157152693E2531FA9F70F368AE" "22-May-2019 08:25:04.00 GMT" "/" "bing.com" nil])
+ (".bing.com"
+  [url-cookie "SRCHD" "AF=NOFORM" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil]
+  [url-cookie "SRCHUSR" "DOB=20170522" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:
