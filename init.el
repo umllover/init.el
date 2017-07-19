@@ -190,6 +190,11 @@
   "gv" 'go-goto-return-values
   "gm" 'go-goto-method-receiver
   "gofmt" 'gofmt
+
+  ;; --- eww -----
+  "ew" 'eww
+  "eu" 'eww-back-url
+
   )
 
  
