@@ -101,7 +101,14 @@
 
 (require 'xcscope) ;;加载xcscope
 (require 'cedet) ;;加载cedet
+
+
+;; ----ecb -----
 (require 'ecb) ;;加载ecb
+;;;; 自动启动ecb，并且不显示每日提示
+(setq ecb-auto-activate t
+      ecb-tip-of-the-day nil)
+
 ;;(global-set-key [C-.] 'cscope-find-global-definition) ;;搜索定义
 ;;;;(global-set-key [C-,] 'cscope-pop-mark) ;; 跳出转向
 ;;;;(enable-visual-studio-bookmarks) ;; 启动VS书签子程序
