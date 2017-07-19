@@ -13,7 +13,7 @@
 ;; Add Packages
 (defvar my/packages '(
            ;; --- Auto-completion ---
-           ;;company
+	   auto-complete
            ;; --- Better Editor ---
            evil
            evil-leader
@@ -33,8 +33,21 @@
            ;; --- Window Jump --
            ace-link
            window-numbering
+	   ;; -- c/c++
+	   xcscope
            ) "Default packages")
- 
+
+;; -- checker ---
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(add-to-list 'display-buffer-alist
+             `(,(rx bos "*Flycheck errors*" eos)
+              (display-buffer-reuse-window
+               display-buffer-in-side-window)
+              (side            . bottom)
+              (reusable-frames . visible)
+              (window-height   . 0.2)))
+
+
 (setq package-selected-packages my/packages)
  
 (defun my/packages-installed-p ()
@@ -49,9 +62,6 @@
       (when (not (package-installed-p pkg))
     (package-install pkg))))
  
-;;(global-company-mode 1)
-;;(add-hook 'after-init-hook 'global-company-mode)
-;;(setq company-dabbrev-downcase nil)
  
 (elpy-enable)
 (require 'hungry-delete)
@@ -78,6 +88,40 @@
 (autoload 'js2-mode "js2-mode" nil t) 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+;; -- auto complete
+(ac-config-default)
+
+;; -- 编码 --
+(setq default-buffer-file-coding-system 'utf-8)  
+(prefer-coding-system 'utf-8)  
+
+;; -- c/c++
+;;(require 'xcscope)
+;;(add-hook 'c-mode-common-hook '(lambda() (require 'xcscope)))
+
+(require 'xcscope) ;;加载xcscope
+(require 'cedet) ;;加载cedet
+(require 'ecb) ;;加载ecb
+;;(global-set-key [C-.] 'cscope-find-global-definition) ;;搜索定义
+;;;;(global-set-key [C-,] 'cscope-pop-mark) ;; 跳出转向
+;;;;(enable-visual-studio-bookmarks) ;; 启动VS书签子程序
+;;;;(setq semanticdb-project-roots (list "d:/work")) ;; 设置cemanticdb的扫描根目录
+(add-hook 'c-mode-common-hook ( lambda() ( c-set-style "k&r" ) ) ) ;;设置C语言默认格式
+(add-hook 'c++-mode-common-hook ( lambda() ( c-set-style "k&r" ) ) ) ;;设置C++语言默认格式 
+
+
+;; -- go lang --
+(require 'go-mode)
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+(ac-config-default)
+
+(add-to-list 'load-path "~/.emacs.d/go-mode")
+;;(require 'go-flymake)
+;;(require 'go-mode-autoloads)
+;;(require 'go-mode-pkg)
+
+
 ;; --- Leader Key ----
 (require 'evil-leader)
 (global-evil-leader-mode)
@@ -98,6 +142,11 @@
   "eb" 'eval-buffer
   "mwb" 'mark-whole-buffer
   "lb" 'list-buffers
+  "lp" 'list-packages
+  ;; --- checker ---
+  "fm" 'flycheck-mode
+  "lfe" 'list-flycheck-errors
+
   ;; ---Scroll ---
   "p" 'scroll-down
   "n" 'scroll-up
@@ -106,16 +155,15 @@
   "2"  'select-window-2
   "3"  'select-window-3
   "4"  'select-window-4
+  "5"  'select-window-5
+  "6"  'select-window-6
+  "7"  'select-window-7
+  "8"  'select-window-8
   "swr" 'split-window-right
   "swb" 'split-window-below
   "dow" 'delete-other-windows
   "dw" 'delete-window
   "al" 'ace-link
-   ;; --- EWW
-  "eww" 'eww
-  "ewb" 'eww-back-url
-  "elb" 'eww-list-bookmarks
-  "eab" 'eww-add-bookmark
   ;;--- kill emacs
   "ke" 'kill-emacs
   ;; -- jump
@@ -129,10 +177,27 @@
   "lml" 'list-matching-lines
   "rs" 'replace-string
   "qr" 'query-replace
+  ;; -- auto complete--
+  "ac" 'auto-complete-mode
 
+  ;; -- code browser
+  "ea" 'ecb-activate ;;定义F12键为激活ecb
+  "ed" 'ecb-deactivate ;;定义Ctrl+F12为停止ecb
+  "gr" 'grep
+
+  ;; -- go --
+  "ga" 'go-goto-arguments
+  "gd" 'go-goto-docstring
+  "gf" 'go-goto-function
+  "gn" 'go-goto-function-name
+  "gv" 'go-goto-return-values
+  "gm" 'go-goto-method-receiver
+  "gofmt" 'gofmt
   )
+
  
- 
+
+
 (require 'evil)
 (evil-mode 1) ;以上的是设置启动emacs载入evil
  
@@ -146,8 +211,8 @@
  
  
  ;;git-emacs
-(add-to-list 'load-path "./git-emacs/")
-(require 'git-emacs)
+;;(add-to-list 'load-path "./git-emacs/")
+;;(require 'git-emacs)
  
 ;; ------ Common Set -----
 (global-hl-line-mode 1)
@@ -156,8 +221,44 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (window-divider-mode -1)
+
+;; ------font ------
+;(set-default-font "DejaVu Sans Mono 11")
+(set-fontset-font (frame-parameter nil 'font)
+		  'han '("宋体"."unicode-bmp"))
 ;;(setq inhibit-splash-screen t)
 ;;(setq-default cursor-type 'bar)
+
+
+;;自动插入匹配的括号
+(defun my-c-mode-auto-pair ()
+  (interactive)
+  (make-local-variable 'skeleton-pair-alist)
+  (setq skeleton-pair-alist  '(
+    (?{ \n > _ \n ?} >)))
+  (setq skeleton-pair t)
+  (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)   
+  (backward-char))
+(add-hook 'c-mode-hook 'my-c-mode-auto-pair)
+(add-hook 'c++-mode-hook 'my-c-mode-auto-pair)
+(add-hook 'go-mode-hook 'my-c-mode-auto-pair)
+
+
+(defun my-c-mode-set ()
+  (c-set-style "k&r")
+  (hs-minor-mode t)
+;;在状态条上显示当前光标在哪个函数体内部
+  (which-function-mode)
+;; 设置C/C++语言缩进字符数
+  (setq c-basic-offset 4))
+
+(add-hook 'c-mode-hook 'my-c-mode-set)
+(add-hook 'c++-mode-hook 'my-c-mode-set)
+
+
 
 (setq  initial-frame-alist (quote ((fullscreen . maximized))))
 ;; 关闭启动帮助画面
@@ -233,3 +334,20 @@
 ;;要想语法高亮代码块中的代码,可以将下面代码放到 .emacs 初始化文件中:
 (setq org-confirm-babel-evaluate nil
       org-src-fontify-natively t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-options-version "2.50")
+ '(ecb-source-path (quote (("f:" "f:") ("e:" "e:"))))
+ '(package-selected-packages
+   (quote
+    (flycheck go-autocomplete go-mode graphviz-dot-mode ecb xcscope auto-complete evil evil-leader smooth-scrolling hungry-delete swiper counsel smartparens elpy web-mode js2-mode monokai-theme ace-link window-numbering))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
