@@ -117,9 +117,6 @@
 (ac-config-default)
 
 (add-to-list 'load-path "~/.emacs.d/go-mode")
-;;(require 'go-flymake)
-;;(require 'go-mode-autoloads)
-;;(require 'go-mode-pkg)
 
 
 ;; --- Leader Key ----
