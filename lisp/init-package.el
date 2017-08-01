@@ -225,4 +225,6 @@
  ;;git-emacs
 ;;(add-to-list 'load-path "~/git-emacs")
 ;;(require 'git-emacs)
+
+(provide 'init-package)
  

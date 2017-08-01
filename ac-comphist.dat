@@ -1,4 +1,12 @@
-((("GetUserByChairId" .
+((("find-file" .
+   [1 0 0 0 0 0 0 0 0])
+  ("interactive" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("defun" .
+   [0 0 0 0 1])
+  ("init-common" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("GetUserByChairId" .
    [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
   ("scoreTimes" .
    [0 0 0 1 0 0 0 0 0 0])
