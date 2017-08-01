@@ -1,0 +1,53 @@
+ls
+cd ..
+cd ..
+ls
+cd hallServer/
+ls
+go run main.go 
+cd ..
+cd ..
+ls
+cd gameServer/
+ls
+cd gameapp
+ls
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+ls
+go -help
+ls
+go -help
+go build
+ls
+gameApp.exe 
+./gameApp.exe
+ls
+./gameApp.exe 
+ls
+gameApp.exe
+./gameApp.exe 
+./gameApp.exe
+./gameApp.exe
+./gameApp.exe
+./gameApp.exe
+./gameApp.exe
+exit
+ls
+cd src
+ls
+cd cd mj
+ls
+cd mj
+ls
+cd gameServer
+ls
+cd gameApp
+ls
+go build
+./gameApp.exe
+ls
+find --help
