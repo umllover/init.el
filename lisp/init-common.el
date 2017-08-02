@@ -123,4 +123,13 @@
 
 (setq doc-view-ghostscript-program "gswin64c")
 
+
+;; -- git bash ---
+(defun git-bash ()
+  "Run git bash in shell mode."
+  (interactive)
+  (let ((explicit-shell-file-name "C:/Program Files (x86)/Git/git-bash"))
+    (call-interactively 'shell)))
+
+
 (provide 'init-common)

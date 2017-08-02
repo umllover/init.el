@@ -35,6 +35,8 @@
            window-numbering
 	   ;; -- c/c++
 	   xcscope
+	   ;; -- git ---
+	   magit
            ) "Default packages")
 
 ;; -- checker ---
@@ -221,10 +223,5 @@
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "M-x") 'smex)
  
- 
- ;;git-emacs
-;;(add-to-list 'load-path "~/git-emacs")
-;;(require 'git-emacs)
-
 (provide 'init-package)
  
