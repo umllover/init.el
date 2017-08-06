@@ -14,6 +14,8 @@
 (defvar my/packages '(
            ;; --- Auto-completion ---
 	   auto-complete
+	   ;; -- ecb
+	   ecb
            ;; --- Better Editor ---
            evil
            evil-leader
