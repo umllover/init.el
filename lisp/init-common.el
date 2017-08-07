@@ -128,8 +128,18 @@
 (defun git-bash ()
   "Run git bash in shell mode."
   (interactive)
-  (let ((explicit-shell-file-name "C:/Program Files (x86)/Git/git-bash"))
+  (let ((explicit-shell-file-name "C:/Git/git-bash"))
     (call-interactively 'shell)))
 
+;; When running in Windows, we want to use an alternate shell so we
+;; can be more unixy.
+;;(setq shell-file-name "C:/cygwin64/bin/bash")
+;;(setq explicit-shell-file-name shell-file-name)
+;;(setenv "PATH"
+;;    (concat ".:/usr/local/bin:/mingw/bin:/bin:/cygdrive/c/Git/bin:/cygdrive/c/OpenSSH/bin:"
+;;        (replace-regexp-in-string " " "\\\\ "
+;;            (replace-regexp-in-string "\\\\" "/"
+;;                (replace-regexp-in-string "\\([A-Za-z]\\):" "/\\1"
+;;                    (getenv "PATH"))))))
 
 (provide 'init-common)

@@ -24,4 +24,13 @@
 (setq org-confirm-babel-evaluate nil
       org-src-fontify-natively t)
 
+;; 在org 中使用 auto
+(setq ac-modes
+        (append ac-modes '(org-mode objc-mode jde-mode sql-mode
+                                    change-log-mode text-mode
+                                    makefile-gmake-mode makefile-bsdmake-mo
+                                    autoconf-mode makefile-automake-mode)))
+
+
+
 (provide 'init-org)

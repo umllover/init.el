@@ -90,6 +90,8 @@
 (autoload 'js2-mode "js2-mode" nil t) 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+;; -- auto complete mode
+(global-auto-complete-mode t)
 ;; -- auto complete
 (ac-config-default)
 (setq ac-use-menu-map t)
@@ -221,7 +223,6 @@
  
  
 (global-set-key "\C-s" 'swiper)
-(global-set-key (kbd "M-x") 'smex)
  
 (provide 'init-package)
  
