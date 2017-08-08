@@ -33,9 +33,6 @@
   [url-cookie "user" "MTUwMTU1OTM5M3xEdi1CQkFFQ180SUFBUkFCRUFBQUp2LUNBQUVHYzNSeWFXNW5EQXNBQ1VsT1JFVllYMVJCUWdaemRISnBibWNNQlFBRFlXeHN8gQZWFnZKaEYkrb1UeZd0gmo_Gmr0dTgbY6qZLe0rZqE=" "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil]
   [url-cookie "Max-Age" "2592000" "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil]
   [url-cookie "HttpOnly" nil "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil])
- ("blog.csdn.net"
-  [url-cookie "uuid" "3a418d94-562c-49c8-b9a3-10692eaf3fb8" "03-Aug-2017 06:09:50.00 GMT" "/" "blog.csdn.net" nil]
-  [url-cookie "avh" "5959468%2c37567253" "02-Aug-2017 07:15:59.00 GMT" "/" "blog.csdn.net" nil])
  (".68idc.cn"
   [url-cookie "yunsuo_session_verify" "582ff14b0c4bf12a566b40d086aab45d" "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil]
   [url-cookie "HttpOnly" nil "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil])
