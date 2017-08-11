@@ -38,7 +38,7 @@
 ;;(add-hook 'go-mode-hook 'my-c-mode-auto-pair)
 
 
-;;自动插入匹配的括号
+(setq skeleton-pair t)
 (global-set-key (kbd "(") 'skeleton-pair-insert-maybe)    
 (global-set-key (kbd "{") 'skeleton-pair-insert-maybe)    
 (global-set-key (kbd "\'") 'skeleton-pair-insert-maybe)    
