@@ -1,198 +1,260 @@
-((("auto-complete-mode" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("auto-complete-config" .
-   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("require" .
-   [0 0 0 1 0 0 0])
-  ("time" .
-   [0 0 1 0])
-  ("continue" .
-   [0 0 0 0 1 0 0 0])
-  ("nil" .
+((("ecb-dired-directory-other-window" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ecb-dired-directory" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("lib" .
    [1 0 0])
-  ("listener" .
-   [0 0 0 1 0 0 0 0])
-  ("const" .
-   [0 0 0 1 0])
-  ("my-c-mode-auto-pair" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("lisp" .
-   [2 0 0 0])
-  ("lisp-mode" .
-   [0 0 0 0 0 0 0 1 0])
-  ("my-c-mode-set" .
-   [0 0 1 0 1 0 0 0 0 0 0 0 0])
-  ("go-mode-hook" .
-   [0 0 0 1 0 0 0 0 0 0 0 0])
-  ("add-hook" .
-   [0 0 0 0 0 2 0 0])
-  ("struct" .
-   [0 0 1 1 0 0])
-  ("G2C_TBNN_StatusScore" .
-   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("string" .
-   [0 0 0 1 0 0])
-  ("int64" .
-   [0 1 4 2 0])
-  ("int" .
-   [26 1 0])
-  ("type" .
-   [0 0 1 0])
-  ("jpeg" .
-   [1 0 0 0])
-  ("dynamic-library-alist" .
-   [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("png" .
-   [3 0 0])
-  ("image-type-available-p" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 13 0 0 0 0 0 0 0 0 0])
-  ("image-type" .
-   [1 0 0 0 0 0 0 0 1 0])
-  ("package" .
-   [0 0 3 0 1 0 0])
-  ("import" .
-   [0 0 5 2 0 0])
-  ("fmt" .
-   [1 0 2])
-  ("main" .
-   [0 0 0 1])
-  ("Printf" .
-   [0 0 1 0 0 0])
-  ("Println" .
-   [0 0 0 0 0 0 1])
-  ("FALSE" .
-   [0 0 2 1 0])
-  ("m_bMissile" .
-   [0 0 0 0 2 0 0 0 0 0])
-  ("setq" .
-   [2 0 0 0])
-  ("fundamental-mode" .
-   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("list-flycheck-errors" .
-   [0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("ecb-activate" .
-   [0 0 0 0 0 0 1 0 0 0 0 0])
-  ("func" .
-   [0 0 5 2])
-  ("err" .
-   [4 0 0])
-  ("net" .
-   [1 0 0])
-  ("checkError" .
-   [0 0 0 1 0 0 0 0 0 0])
-  ("room" .
-   [0 0 25 0])
-  ("UserGameStatusMap" .
-   [0 0 7 2 2 1 1 0 0 0 0 0 0 0 0 0 0])
-  ("make" .
-   [1 0 0 0])
-  ("map" .
-   [0 0 1])
-  ("user" .
-   [2 0 1 0])
-  ("User" .
-   [2 0 0 1])
-  ("GAME_STATUS_NULL" .
-   [0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("GAME_STATUS_OPEN_CARD" .
-   [0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("game" .
-   [1 0 0 0])
-  ("GAME_STATUS_ADD_SCORE" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("SetAllUserGameStatus" .
-   [0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("GAME_STATUS_START" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("PlayerCount" .
-   [0 0 1 0 0 0 0 0 0 0 0])
-  ("log" .
-   [8 0 0])
-  ("default" .
-   [0 0 1 0 0 0 0])
-  ("Debug" .
-   [0 0 0 4 4])
-  ("CardData" .
-   [0 0 0 1 0 0 0 0])
-  ("GameStatus" .
-   [0 0 0 0 0 1 0 0 0 0])
-  ("GAME_STATUS_CALL_SCORE" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("CallScoreTimesMap" .
-   [0 0 0 2 2 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("AddScoreMap" .
-   [0 0 0 2 1 0 0 0 0 0 0])
-  ("nn_tb_msg" .
-   [0 0 2 0 0 0 0 0 0])
-  ("nntb_data_mgr" .
-   [0 0 2 0 1 0 0 0 0 0 0 0 0])
-  ("gameStatus" .
-   [0 0 0 0 0 1 1 0 0 0])
-  ("SetUserGameStatus" .
-   [0 0 0 4 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("ChairId" .
-   [0 0 11 8 6 1 0])
-  ("userMgr" .
-   [1 0 0 0 0 1 0])
-  ("PkBase" .
-   [0 0 0 2 0 0])
-  ("UserMgr" .
-   [0 0 0 0 0 2 0])
-  ("ForEachUser" .
-   [0 0 0 0 0 1 0 0 0 0 0])
-  ("userReLoginInfo" .
-   [0 0 5 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("new" .
-   [1 0 0])
-  ("UserReLoginInfo" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("ChairID" .
-   [0 0 0 1 0 0 0])
-  ("UserGameStatus" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("CallScoreTimes" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("AddScoreTimes" .
-   [1 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("chairId" .
-   [0 0 3 3 4 2 0])
-  ("addScore" .
-   [0 0 0 0 1 0 0 0])
-  ("AddScoreTimesMap" .
-   [0 0 0 1 0 0 0 0 0 0 3 0 0 0 0 0])
-  ("addScoreTimes" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("SetUserAddScoreTimes" .
-   [0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("score" .
-   [0 0 1 0 0])
-  ("set" .
-   [1 0 0])
-  ("calScore" .
-   [1 0 0 0 1 0 0 0])
-  ("CalScoreMap" .
-   [0 0 0 0 1 0 0 0 0 0 0])
-  ("call" .
-   [2 0 0 0])
-  ("SetUserCallScoreTimes" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("scoreTimes" .
-   [0 0 0 1 0 0 0 0 0 0])
-  ("GetUserByChairId" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("init-common" .
-   [0 0 0 0 1 0 0 0 0 0 0])
-  ("defun" .
-   [0 0 0 0 1])
-  ("interactive" .
-   [0 0 0 0 0 0 1 0 0 0 0])
-  ("find-file" .
-   [1 0 0 0 0 0 0 0 0])
-  ("println" .
-   [0 0 1 0 0 0 0])
-  ("nextData" .
-   [0 0 0 1 0 0 0 0])
   ("global-auto-complete-mode" .
    [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("lib" .
-   [1 0 0])))
+  ("nextData" .
+   [0 0 0 2 0 0 0 0])
+  ("println" .
+   [0 0 1 0 0 0 0])
+  ("find-file" .
+   [1 0 0 0 0 0 0 0 0])
+  ("interactive" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("defun" .
+   [0 0 0 0 1])
+  ("init-common" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("GetUserByChairId" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("scoreTimes" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("SetUserCallScoreTimes" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("call" .
+   [2 0 0 0])
+  ("CalScoreMap" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("calScore" .
+   [1 0 0 0 1 0 0 0])
+  ("set" .
+   [1 0 0])
+  ("score" .
+   [0 0 1 0 0])
+  ("SetUserAddScoreTimes" .
+   [0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("addScoreTimes" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("AddScoreTimesMap" .
+   [0 0 0 1 0 0 0 0 0 0 3 0 0 0 0 0])
+  ("addScore" .
+   [0 0 0 0 1 0 0 0])
+  ("chairId" .
+   [0 0 3 3 4 2 0])
+  ("AddScoreTimes" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("CallScoreTimes" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("UserGameStatus" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("ChairID" .
+   [0 0 0 1 0 0 0])
+  ("UserReLoginInfo" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("new" .
+   [1 0 0])
+  ("userReLoginInfo" .
+   [0 0 5 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ForEachUser" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("UserMgr" .
+   [0 0 0 0 0 2 0])
+  ("PkBase" .
+   [0 0 0 2 0 0])
+  ("userMgr" .
+   [1 0 0 0 0 1 0])
+  ("ChairId" .
+   [0 0 11 8 6 1 0])
+  ("SetUserGameStatus" .
+   [0 0 0 4 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("gameStatus" .
+   [0 0 0 0 0 1 1 0 0 0])
+  ("nntb_data_mgr" .
+   [0 0 2 0 1 0 0 0 0 0 0 0 0])
+  ("nn_tb_msg" .
+   [0 0 2 0 0 0 0 0 0])
+  ("AddScoreMap" .
+   [0 0 0 2 1 0 0 0 0 0 0])
+  ("CallScoreTimesMap" .
+   [0 0 0 2 2 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("GAME_STATUS_CALL_SCORE" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GameStatus" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("CardData" .
+   [0 0 0 1 0 0 0 0])
+  ("Debug" .
+   [0 0 0 4 4])
+  ("default" .
+   [0 0 1 0 0 0 0])
+  ("log" .
+   [8 0 0])
+  ("PlayerCount" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("GAME_STATUS_START" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SetAllUserGameStatus" .
+   [0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GAME_STATUS_ADD_SCORE" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("game" .
+   [1 0 0 0])
+  ("GAME_STATUS_OPEN_CARD" .
+   [0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GAME_STATUS_NULL" .
+   [0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("User" .
+   [2 0 0 1])
+  ("user" .
+   [2 0 1 0])
+  ("map" .
+   [0 0 1])
+  ("make" .
+   [3 0 0 1])
+  ("UserGameStatusMap" .
+   [0 0 7 2 2 1 1 0 0 0 0 0 0 0 0 0 0])
+  ("room" .
+   [0 0 25 0])
+  ("checkError" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("net" .
+   [1 0 0])
+  ("err" .
+   [4 0 0])
+  ("func" .
+   [0 0 9 2])
+  ("ecb-activate" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("list-flycheck-errors" .
+   [0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("fundamental-mode" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("setq" .
+   [2 0 0 0])
+  ("m_bMissile" .
+   [0 0 0 0 2 0 0 0 0 0])
+  ("FALSE" .
+   [0 0 2 1 0])
+  ("Println" .
+   [0 0 5 0 0 0 1])
+  ("Printf" .
+   [0 0 1 0 0 0])
+  ("main" .
+   [3 0 0 1])
+  ("fmt" .
+   [3 0 5])
+  ("import" .
+   [0 0 7 2 0 0])
+  ("package" .
+   [0 0 4 0 1 0 0])
+  ("image-type" .
+   [1 0 0 0 0 0 0 0 1 0])
+  ("image-type-available-p" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 13 0 0 0 0 0 0 0 0 0])
+  ("png" .
+   [3 0 0])
+  ("dynamic-library-alist" .
+   [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("jpeg" .
+   [1 0 0 0])
+  ("type" .
+   [0 0 1 0])
+  ("int" .
+   [32 1 0])
+  ("int64" .
+   [0 1 4 2 0])
+  ("string" .
+   [0 0 0 1 0 0])
+  ("G2C_TBNN_StatusScore" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("struct" .
+   [0 0 1 1 0 0])
+  ("add-hook" .
+   [0 0 0 0 0 2 0 0])
+  ("go-mode-hook" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("my-c-mode-set" .
+   [0 0 1 0 1 0 0 0 0 0 0 0 0])
+  ("lisp-mode" .
+   [0 0 0 0 0 0 0 1 0])
+  ("lisp" .
+   [2 0 0 0])
+  ("my-c-mode-auto-pair" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("const" .
+   [0 0 0 1 0])
+  ("listener" .
+   [0 0 0 1 0 0 0 0])
+  ("nil" .
+   [1 0 0])
+  ("continue" .
+   [0 0 0 0 1 0 0 0])
+  ("time" .
+   [0 0 1 0])
+  ("require" .
+   [0 0 0 1 0 0 0])
+  ("auto-complete-config" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("auto-complete-mode" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("GetCardColor" .
+   [0 0 0 1 0 0 1 0 0 0 0 0])
+  ("firstCard" .
+   [0 0 0 0 0 1 0 0 0])
+  ("firstData" .
+   [0 0 0 0 0 0 1 0 0])
+  ("var" .
+   [0 0 2])
+  ("count" .
+   [1 0 0 3 0])
+  ("sync" .
+   [0 0 2 0])
+  ("lock" .
+   [2 0 2 2])
+  ("Lock" .
+   [1 0 4 0])
+  ("counter" .
+   [0 0 0 3 0 0 0])
+  ("Mutex" .
+   [0 0 1 0 0])
+  ("for" .
+   [0 0 3])
+  ("Unlock" .
+   [0 0 0 1 0 0])
+  ("runtime" .
+   [0 0 1 0 0 0 0])
+  ("break" .
+   [0 0 0 1 0])
+  ("class" .
+   [1 0 1 1 0])
+  ("goroutine1" .
+   [0 0 2 1 0 0 0 0 0 0])
+  ("->" .
+   [2 0])
+  ("goroutine2" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("progress1" .
+   [0 0 0 1 0 0 0 0 0])
+  ("progress2" .
+   [0 0 0 1 0 0 0 0 0])
+  ("chan" .
+   [0 0 4 0])
+  ("countting" .
+   [0 0 0 1 0 0 0 0 0])
+  ("chs" .
+   [3 0 0])
+  ("range" .
+   [0 0 1 0 0])
+  ("value" .
+   [0 0 1 1 0])
+  ("select" .
+   [0 0 1 0 0 0])
+  ("case" .
+   [0 0 2 0])
+  ("file" .
+   [1 0 0 0])
+  ("goroutine" .
+   [0 0 1 0 0 0 0 0 0])))

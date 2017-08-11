@@ -22,20 +22,29 @@
 
 
 ;;自动插入匹配的括号
-(defun my-c-mode-auto-pair ()
-  (interactive)
-  (make-local-variable 'skeleton-pair-alist)
-  (setq skeleton-pair-alist  '(
-    (?{ \n > _ \n ?} >)))
-  (setq skeleton-pair t)
-  (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
-  (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
-  (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
-  (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)   
-  (backward-char))
-(add-hook 'c-mode-hook 'my-c-mode-auto-pair)
-(add-hook 'c++-mode-hook 'my-c-mode-auto-pair)
-(add-hook 'go-mode-hook 'my-c-mode-auto-pair)
+;;(defun my-c-mode-auto-pair ()
+;;  (interactive)
+;;  (make-local-variable 'skeleton-pair-alist)
+;;  (setq skeleton-pair-alist  '(
+;;    (?{ \n > _ \n ?} >)))
+;;  (setq skeleton-pair t)
+;;  (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+;;  (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+;;  (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+;;  (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)   
+;;  (backward-char))
+;;(add-hook 'c-mode-hook 'my-c-mode-auto-pair)
+;;(add-hook 'c++-mode-hook 'my-c-mode-auto-pair)
+;;(add-hook 'go-mode-hook 'my-c-mode-auto-pair)
+
+
+;;自动插入匹配的括号
+(global-set-key (kbd "(") 'skeleton-pair-insert-maybe)    
+(global-set-key (kbd "{") 'skeleton-pair-insert-maybe)    
+(global-set-key (kbd "\'") 'skeleton-pair-insert-maybe)    
+(global-set-key (kbd "\"") 'skeleton-pair-insert-maybe)    
+(global-set-key (kbd "[") 'skeleton-pair-insert-maybe)    
+
 
 
 (defun my-c-mode-set ()

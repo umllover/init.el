@@ -196,11 +196,8 @@
   "ac" 'auto-complete-mode
 
   ;; -- code browser
-  "ea" 'ecb-activate ;;定义F12键为激活ecb
-  "ed" 'ecb-deactivate ;;定义Ctrl+F12为停止ecb
-  "eh" 'ecb-hide-ecb-windows
-  "es" 'ecb-show-ecb-windows
-  "eo" 'ecb-open-source-in-editwin1
+  "ed" 'ecb-dired-directory-other-window
+  "eg" 'ecb-grep-find-directory
   "gr" 'grep
 
   ;; -- go --
@@ -216,6 +213,9 @@
   ;; --- eww -----
   "ew" 'eww
   "eu" 'eww-back-url
+
+  ;; --- help ---
+  "in" 'info
 
   )
 
