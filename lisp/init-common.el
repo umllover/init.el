@@ -30,6 +30,35 @@
 (global-set-key (kbd "[") 'skeleton-pair-insert-maybe)    
 
 
+;;自动插入匹配的括号
+;;C/C++  mode
+(defun my-c-mode-auto-pair ()
+  (interactive)
+  (make-local-variable 'skeleton-pair-alist)
+  (setq skeleton-pair-alist  '(
+    (?{ \n > _ \n ?} >)))
+  (setq skeleton-pair t)
+  (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+  (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)   
+  (backward-char))
+(add-hook 'c-mode-hook 'my-c-mode-auto-pair)
+(add-hook 'c++-mode-hook 'my-c-mode-auto-pair)
+
+
+(defun my-c-mode-set ()
+  (c-set-style "k&r")
+  (hs-minor-mode t)
+;;在状态条上显示当前光标在哪个函数体内部
+  (which-function-mode)
+;; 设置C/C++语言缩进字符数
+  (setq c-basic-offset 4))
+
+(add-hook 'c-mode-hook 'my-c-mode-set)
+(add-hook 'c++-mode-hook 'my-c-mode-set)
+
+
 ;; 四分屏
 (defun split-window-to-four()
   "split current frame to four"
