@@ -100,22 +100,6 @@
 (define-key ac-menu-map "\C-n" 'ac-next)
 (define-key ac-menu-map "\C-p" 'ac-previous)
 
-;; -- c/c++
-(require 'xcscope)
-(add-hook 'c-mode-common-hook '(lambda() (require 'xcscope)))
-
-(require 'xcscope) ;;加载xcscope
-(require 'cedet) ;;加载cedet
-
-
-;; ----ecb -----
-(require 'ecb) ;;加载ecb
-;;;; 自动启动ecb，并且不显示每日提示
-(setq ecb-auto-activate t
-      ecb-tip-of-the-day nil)
-
-(add-hook 'c-mode-common-hook ( lambda() ( c-set-style "k&r" ) ) ) ;;设置C语言默认格式
-(add-hook 'c++-mode-common-hook ( lambda() ( c-set-style "k&r" ) ) ) ;;设置C++语言默认格式 
 
 
 ;; -- go lang --
@@ -130,97 +114,5 @@
 (load-theme 'monokai 1)
 
 
-;; --- Leader Key ----
-(require 'evil-leader)
-(global-evil-leader-mode)
-(evil-leader/set-leader "<SPC>")
- 
-(evil-leader/set-key
-  ;; --- M-x ---
-  "x"  'counsel-M-x
-  "sh" 'shell
-  "sc" 'shell-command
-  ;; --- File ---
-  "ff" 'find-file
-  "fow" 'find-file-other-window
-  "rf" 'recentf-open-files
-  ;; -- dired
-  "dir" 'dired
-  ;; ---Buffer----
-  "sb" 'save-buffer
-  "stb" 'switch-to-buffer
-  "eb" 'eval-buffer
-  "mwb" 'mark-whole-buffer
-  "lb" 'list-buffers
-  "lp" 'list-packages
-  "rb" 'rename-buffer
-  "kb" 'kill-buffer
-
-  ;; --- checker ---
-  "fm" 'flycheck-mode
-  "lfe" 'list-flycheck-errors
-
-  ;; ---Scroll ---
-  "p" 'scroll-down
-  "n" 'scroll-up
-  ;; ---Window ---
-  "1"  'select-window-1
-  "2"  'select-window-2
-  "3"  'select-window-3
-  "4"  'select-window-4
-  "5"  'select-window-5
-  "6"  'select-window-6
-  "7"  'select-window-7
-  "8"  'select-window-8
-  "9"  'select-window-9
-  "swr" 'split-window-right
-  "swb" 'split-window-below
-  "dow" 'delete-other-windows
-  "dw" 'delete-window
-  "al" 'ace-link
-  ;;--- kill emacs
-  "ke" 'kill-emacs
-  ;; -- jump
-  "gl" 'goto-line
-  ;; -- modes
-  "am" 'artist-mode
-  ;; -- find--
-  "lml" 'list-matching-lines
-  "rs" 'replace-string
-  "qr" 'query-replace
-  ;; -- auto complete--
-  "ac" 'auto-complete-mode
-
-  ;; -- code browser
-  "ed" 'ecb-dired-directory-other-window
-  "eg" 'ecb-grep-find-directory
-  "gr" 'grep
-
-  ;; -- go --
-  "ga" 'go-goto-arguments
-  "gd" 'go-goto-docstring
-  "gf" 'go-goto-function
-  "gn" 'go-goto-function-name
-  "gv" 'go-goto-return-values
-  "gm" 'go-goto-method-receiver
-  "gofmt" 'gofmt
-  "gj" 'godef-jump
-
-  ;; --- eww -----
-  "ew" 'eww
-  "eu" 'eww-back-url
-
-  ;; --- help ---
-  "in" 'info
-
-  )
-
- 
-(require 'evil)
-(evil-mode 1) ;以上的是设置启动emacs载入evil
- 
- 
-(global-set-key "\C-s" 'swiper)
- 
 (provide 'init-package)
  

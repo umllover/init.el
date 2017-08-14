@@ -1,4 +1,8 @@
-((("current-message" .
+((("semantic-ia-complete-symbol-menu" .
+   [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("semantic-lex-default-action" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("current-message" .
    [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
   ("current" .
    [1 0 0 0 0 0 0])
@@ -71,7 +75,7 @@
   ("auto-complete-config" .
    [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("require" .
-   [0 0 0 1 0 0 0])
+   [0 0 0 3 0 0 0])
   ("time" .
    [0 0 1 0])
   ("continue" .
@@ -269,4 +273,14 @@
   ("ecb-dired-directory-other-window" .
    [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("cscope-find-this-symbol" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])))
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("semantic" .
+   [0 0 0 1 0 0 0 0])
+  ("s" .
+   [1])
+  ("yasnippet" .
+   [0 0 1 0 0 0 0 0 0])
+  ("yas/initialize" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("yas-global-mode" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])))
