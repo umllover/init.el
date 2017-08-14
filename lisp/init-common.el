@@ -230,6 +230,14 @@
   "gofmt" 'gofmt
   "gj" 'godef-jump
 
+  ;; -- c++ ------
+  "cfg" 'cscope-find-global-definition ;;搜索定义
+  "cft" 'cscope-find-this-symbol'
+;;;;(global-set-key [C-,] 'cscope-pop-mark) ;; 跳出转向
+;;;;(enable-visual-studio-bookmarks) ;; 启动VS书签子程序
+;;;;(setq semanticdb-project-roots (list "d:/work")) ;; 设置cemanticdb的扫描根目录
+
+
   ;; --- eww -----
   "ew" 'eww
   "eu" 'eww-back-url

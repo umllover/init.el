@@ -101,8 +101,8 @@
 (define-key ac-menu-map "\C-p" 'ac-previous)
 
 ;; -- c/c++
-;;(require 'xcscope)
-;;(add-hook 'c-mode-common-hook '(lambda() (require 'xcscope)))
+(require 'xcscope)
+(add-hook 'c-mode-common-hook '(lambda() (require 'xcscope)))
 
 (require 'xcscope) ;;加载xcscope
 (require 'cedet) ;;加载cedet
@@ -114,10 +114,6 @@
 (setq ecb-auto-activate t
       ecb-tip-of-the-day nil)
 
-;;(global-set-key [C-.] 'cscope-find-global-definition) ;;搜索定义
-;;;;(global-set-key [C-,] 'cscope-pop-mark) ;; 跳出转向
-;;;;(enable-visual-studio-bookmarks) ;; 启动VS书签子程序
-;;;;(setq semanticdb-project-roots (list "d:/work")) ;; 设置cemanticdb的扫描根目录
 (add-hook 'c-mode-common-hook ( lambda() ( c-set-style "k&r" ) ) ) ;;设置C语言默认格式
 (add-hook 'c++-mode-common-hook ( lambda() ( c-set-style "k&r" ) ) ) ;;设置C++语言默认格式 
 
