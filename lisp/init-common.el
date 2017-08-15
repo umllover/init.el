@@ -16,20 +16,11 @@
 (prefer-coding-system 'utf-8)  
 
 
-(require 'xcscope)
-(add-hook 'c-mode-common-hook '(lambda() (require 'xcscope)))
-(require 'cedet) ;;加载cedet
-(require 'semantic)
-
-
 ;; ----ecb -----
 (require 'ecb) ;;加载ecb
 ;;;; 自动启动ecb，并且不显示每日提示
 (setq ecb-auto-activate t
       ecb-tip-of-the-day nil)
-
-(require 'yasnippet)
-(yas-global-mode 1)
 
 (setq  initial-frame-alist (quote ((fullscreen . maximized))))
 ;; 关闭启动帮助画面
@@ -78,34 +69,6 @@
  '(package-selected-packages
    (quote
     (flycheck go-autocomplete go-mode graphviz-dot-mode ecb xcscope auto-complete evil evil-leader smooth-scrolling hungry-delete swiper counsel smartparens elpy web-mode js2-mode monokai-theme ace-link window-numbering))))
-
-
-;; -- webmode
-(elpy-enable)
-(setq auto-mode-alist
-      (append
-       '(("\\.js\\'" . js2-mode))
-       '(("\\.html\\'" . web-mode))
-       auto-mode-alist))
-(defun my-web-mode-indent-setup ()
-  (setq web-mode-markup-indent-offset 2) ; web-mode, html tag in html file
-  (setq web-mode-css-indent-offset 2)    ; web-mode, css in html file
-  (setq web-mode-code-indent-offset 2)   ; web-mode, js code in html file
-  )
-(add-hook 'web-mode-hook 'my-web-mode-indent-setup)
-
-(add-to-list 'load-path "~/.emacs.d/js2-mode") 
-(autoload 'js2-mode "js2-mode" nil t) 
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-
-
-;; -- go lang --
-(require 'go-mode)
-(require 'go-autocomplete)
-(require 'auto-complete-config)
-(ac-config-default)
-
-(add-to-list 'load-path "~/.emacs.d/go-mode")
 
 ;; theme
 (load-theme 'monokai 1)
