@@ -14,6 +14,8 @@
 
 (require 'init-package)
 (require 'init-common)
+(require 'init-autocomplete)
+(require 'init-keymap)
 (require 'init-org)
 ;;(require 'file-search)
 

@@ -6,90 +6,18 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (window-divider-mode -1)
+(window-numbering-mode 1)
 
 ;; ------font ------
-;(set-default-font "DejaVu Sans Mono 11")
 (set-fontset-font (frame-parameter nil 'font)
 		  'han '("宋体"."unicode-bmp"))
-;;(setq inhibit-splash-screen t)
-;;(setq-default cursor-type 'bar)
-
-;; code
 ;; -- 编码 --
 (setq default-buffer-file-coding-system 'utf-8)  
 (prefer-coding-system 'utf-8)  
 
 
-
-;;自动插入匹配的括号
-(setq skeleton-pair t)
-(global-set-key (kbd "(") 'skeleton-pair-insert-maybe)    
-(global-set-key (kbd "{") 'skeleton-pair-insert-maybe)    
-(global-set-key (kbd "\'") 'skeleton-pair-insert-maybe)    
-(global-set-key (kbd "\"") 'skeleton-pair-insert-maybe)    
-(global-set-key (kbd "[") 'skeleton-pair-insert-maybe)    
-
-
-;;自动插入匹配的括号
-;;C/C++  mode
-(defun my-c-mode-auto-pair ()
-  (interactive)
-  (make-local-variable 'skeleton-pair-alist)
-  (setq skeleton-pair-alist  '(
-    (?{ \n > _ \n ?} >)))
-  (setq skeleton-pair t)
-  (local-set-key (kbd "(") 'skeleton-pair-insert-maybe)
-  (local-set-key (kbd "[") 'skeleton-pair-insert-maybe)
-  (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
-  (local-set-key (kbd "{") 'skeleton-pair-insert-maybe)   
-  (backward-char))
-(add-hook 'c-mode-hook 'my-c-mode-auto-pair)
-(add-hook 'c++-mode-hook 'my-c-mode-auto-pair)
-
-
-(defun my-c-mode-set ()
-  (c-set-style "k&r")
-  (hs-minor-mode t)
-;;在状态条上显示当前光标在哪个函数体内部
-  (which-function-mode)
-;; 设置C/C++语言缩进字符数
-  (setq c-basic-offset 4))
-
-(add-hook 'c-mode-hook 'my-c-mode-set)
-(add-hook 'c++-mode-hook 'my-c-mode-set)
-
-
-;; 四分屏
-(defun split-window-to-four()
-  "split current frame to four"
-  (interactive)
-  (progn
-    (split-window-horizontally)
-    (set-window-buffer (next-window) (current-buffer))
-    (split-window-vertically)
-    (set-window-buffer (next-window) (current-buffer))
-    (other-window 2)
-    (split-window-vertically)
-    (set-window-buffer (next-window) (current-buffer))
-    (other-window -2)))
-
-
-;;(defun my-c-mode-set ()
-;;  (c-set-style "k&r")
-;;  (hs-minor-mode t)
-;;;;在状态条上显示当前光标在哪个函数体内部
-;;  (which-function-mode)
-;;;; 设置C/C++语言缩进字符数
-;;  (setq c-basic-offset 4))
-;;
-;;(add-hook 'c-mode-hook 'my-c-mode-set)
-;;(add-hook 'c++-mode-hook 'my-c-mode-set)
-;; -- c/c++
-
 (require 'xcscope)
 (add-hook 'c-mode-common-hook '(lambda() (require 'xcscope)))
-
-(require 'xcscope) ;;加载xcscope
 (require 'cedet) ;;加载cedet
 (require 'semantic)
 
@@ -152,114 +80,34 @@
     (flycheck go-autocomplete go-mode graphviz-dot-mode ecb xcscope auto-complete evil evil-leader smooth-scrolling hungry-delete swiper counsel smartparens elpy web-mode js2-mode monokai-theme ace-link window-numbering))))
 
 
-(setq doc-view-ghostscript-program "gswin64c")
-
-
-;; -- git bash ---
-(defun git-bash ()
-  "Run git bash in shell mode."
-  (interactive)
-  (let ((explicit-shell-file-name "C:/Git/git-bash"))
-    (call-interactively 'shell)))
-
-
-;; --- Leader Key ----
-(require 'evil-leader)
-(global-evil-leader-mode)
-(evil-leader/set-leader "<SPC>")
- 
-(evil-leader/set-key
-  ;; --- M-x ---
-  "x"  'counsel-M-x
-  "sh" 'shell
-  "sc" 'shell-command
-  ;; --- File ---
-  "ff" 'find-file
-  "fow" 'find-file-other-window
-  "rf" 'recentf-open-files
-  ;; -- dired
-  "dir" 'dired
-  ;; ---Buffer----
-  "sb" 'save-buffer
-  "stb" 'switch-to-buffer
-  "eb" 'eval-buffer
-  "mwb" 'mark-whole-buffer
-  "lb" 'list-buffers
-  "lp" 'list-packages
-  "rb" 'rename-buffer
-  "kb" 'kill-buffer
-
-  ;; --- checker ---
-  "fm" 'flycheck-mode
-  "lfe" 'list-flycheck-errors
-
-  ;; ---Scroll ---
-  "p" 'scroll-down
-  "n" 'scroll-up
-  ;; ---Window ---
-  "1"  'select-window-1
-  "2"  'select-window-2
-  "3"  'select-window-3
-  "4"  'select-window-4
-  "5"  'select-window-5
-  "6"  'select-window-6
-  "7"  'select-window-7
-  "8"  'select-window-8
-  "9"  'select-window-9
-  "swr" 'split-window-right
-  "swb" 'split-window-below
-  "swf" 'split-window-to-four
-  "dow" 'delete-other-windows
-  "dw" 'delete-window
-  "al" 'ace-link
-  ;;--- kill emacs
-  "ke" 'kill-emacs
-  ;; -- jump
-  "gl" 'goto-line
-  ;; -- modes
-  "am" 'artist-mode
-  ;; -- find--
-  "lml" 'list-matching-lines
-  "rs" 'replace-string
-  "qr" 'query-replace
-  ;; -- auto complete--
-  "ac" 'auto-complete-mode
-
-  ;; -- code browser
-  "ed" 'ecb-dired-directory-other-window
-  "eg" 'ecb-grep-find-directory
-  "gr" 'grep
-
-  ;; -- go --
-  "ga" 'go-goto-arguments
-  "gd" 'go-goto-docstring
-  "gf" 'go-goto-function
-  "gn" 'go-goto-function-name
-  "gv" 'go-goto-return-values
-  "gm" 'go-goto-method-receiver
-  "gofmt" 'gofmt
-  "gj" 'godef-jump
-
-  ;; -- c++ ------
-  "cfg" 'cscope-find-global-definition ;;搜索定义
-  "cft" 'cscope-find-this-symbol'
-
-  ;; --- eww -----
-  "ew" 'eww
-  "eu" 'eww-back-url
-
-  ;; --- help ---
-  "in" 'info
-
+;; -- webmode
+(elpy-enable)
+(setq auto-mode-alist
+      (append
+       '(("\\.js\\'" . js2-mode))
+       '(("\\.html\\'" . web-mode))
+       auto-mode-alist))
+(defun my-web-mode-indent-setup ()
+  (setq web-mode-markup-indent-offset 2) ; web-mode, html tag in html file
+  (setq web-mode-css-indent-offset 2)    ; web-mode, css in html file
+  (setq web-mode-code-indent-offset 2)   ; web-mode, js code in html file
   )
+(add-hook 'web-mode-hook 'my-web-mode-indent-setup)
 
- 
-(require 'evil)
-(evil-mode 1) ;以上的是设置启动emacs载入evil
- 
- 
-(global-set-key "\C-s" 'swiper)
-(global-set-key "\C-i" 'semantic-ia-complete-symbol-menu)
+(add-to-list 'load-path "~/.emacs.d/js2-mode") 
+(autoload 'js2-mode "js2-mode" nil t) 
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+
+;; -- go lang --
+(require 'go-mode)
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+(ac-config-default)
+
+(add-to-list 'load-path "~/.emacs.d/go-mode")
+
+;; theme
+(load-theme 'monokai 1)
 
 (provide 'init-common)
