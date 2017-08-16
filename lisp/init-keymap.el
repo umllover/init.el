@@ -110,7 +110,6 @@
 (global-set-key "\C-s" 'swiper)
 (global-set-key "\C-i" 'semantic-ia-complete-symbol-menu)
 
-(add-hook 'after-init-hook 'split-window-to-four)
-(add-hook 'after-init-hook 'ecb-activate)
+(add-hook 'ecb-activate-hook 'split-window-to-four)
 
 (provide 'init-keymap)
