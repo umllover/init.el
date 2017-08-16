@@ -1,4 +1,6 @@
-((("Socket编程" .
+((("ecb-windows-width" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("Socket编程" .
    [0 0 1 0 0 0 0 0])
   ("init-langs" .
    [0 0 0 0 0 0 1 0 0 0])
@@ -143,7 +145,7 @@
   ("m_bMissile" .
    [0 0 0 0 2 0 0 0 0 0])
   ("setq" .
-   [2 0 0 0])
+   [3 0 0 0])
   ("fundamental-mode" .
    [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0])
   ("list-flycheck-errors" .

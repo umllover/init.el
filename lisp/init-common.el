@@ -21,6 +21,7 @@
 ;;;;;; 自动启动ecb，并且不显示每日提示
 (setq ecb-auto-activate t)
 (setq ecb-tip-of-the-day nil)
+(setq ecb-windows-width 0.15)
 
 (setq  initial-frame-alist (quote ((fullscreen . maximized))))
 ;; 关闭启动帮助画面
