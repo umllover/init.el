@@ -81,18 +81,18 @@
   "gr" 'grep
 
   ;; -- go --
-  "ga" 'go-goto-arguments
-  "gd" 'go-goto-docstring
-  "gf" 'go-goto-function
-  "gn" 'go-goto-function-name
-  "gv" 'go-goto-return-values
-  "gm" 'go-goto-method-receiver
-  "gofmt" 'gofmt
-  "gj" 'godef-jump
+  ;;"ga" 'go-goto-arguments
+  ;;"gd" 'go-goto-docstring
+  ;;"gf" 'go-goto-function
+  ;;"gn" 'go-goto-function-name
+  ;;"gv" 'go-goto-return-values
+  ;;"gm" 'go-goto-method-receiver
+  ;;"gofmt" 'gofmt
+  "gd" 'godef-jump
 
   ;; -- c++ ------
-  "cfg" 'cscope-find-global-definition ;;搜索定义
-  "cft" 'cscope-find-this-symbol'
+  "cfd" 'cscope-find-global-definition ;;搜索定义
+  "cfs" 'cscope-find-this-symbol'
 
   ;; --- eww -----
   "ew" 'eww
@@ -110,5 +110,7 @@
 (global-set-key "\C-s" 'swiper)
 (global-set-key "\C-i" 'semantic-ia-complete-symbol-menu)
 
+(add-hook 'after-init-hook 'split-window-to-four)
+(add-hook 'after-init-hook 'ecb-activate)
 
 (provide 'init-keymap)

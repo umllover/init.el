@@ -18,9 +18,9 @@
 
 ;; ----ecb -----
 (require 'ecb) ;;加载ecb
-;;;; 自动启动ecb，并且不显示每日提示
-(setq ecb-auto-activate t
-      ecb-tip-of-the-day nil)
+;;;;;; 自动启动ecb，并且不显示每日提示
+;;(setq ecb-auto-activate t
+(setq ecb-tip-of-the-day nil)
 
 (setq  initial-frame-alist (quote ((fullscreen . maximized))))
 ;; 关闭启动帮助画面
