@@ -12,6 +12,15 @@
     (set-window-buffer (next-window) (current-buffer))
     (other-window -2)))
 
+;;(defun show-recent-open-files()
+;;  (interactive)
+;;  (select-window-5)
+;;  (recentf-open-files)
+;;  (rename-uniquely)
+;;  (select-window-6)
+;;  (recentf-open-files)
+;;  (rename-uniquely))
+
 ;; --- Leader Key ----
 (require 'evil-leader)
 (global-evil-leader-mode)
@@ -36,6 +45,7 @@
   "lb" 'list-buffers
   "lp" 'list-packages
   "rb" 'rename-buffer
+  "ru" 'rename-uniquely
   "kb" 'kill-buffer
   "ssb" 'save-some-buffers
 
@@ -90,7 +100,7 @@
   ;;"gofmt" 'gofmt
   "gd" 'godef-jump
 
-  ;; -- c++ ------
+  ;; -- cpp ------
   "cfd" 'cscope-find-global-definition ;;搜索定义
   "cfs" 'cscope-find-this-symbol'
 
@@ -98,8 +108,13 @@
   "ew" 'eww
   "eu" 'eww-back-url
 
+  ;; -- org
+  "oi" 'org-insert-src-block
+
   ;; --- help ---
   "in" 'info
+  "df" 'describe-function
+  "dv" 'describe-variable
   )
 
  
@@ -110,6 +125,7 @@
 (global-set-key "\C-s" 'swiper)
 (global-set-key "\C-i" 'semantic-ia-complete-symbol-menu)
 
+(add-hook 'ecb-activate-hook 'recentf-open-files)
 (add-hook 'ecb-activate-hook 'split-window-to-four)
 
 (provide 'init-keymap)
