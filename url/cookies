@@ -2,60 +2,61 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- '(("cn.bing.com"
-  [url-cookie "SRCHUID" "V=2&GUID=5E47084CA19C4FA08D98C1C0EFB3E13D" "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
-  [url-cookie "MUIDB" "2963F0157152693E2531FA9F70F368AE" "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
-  [url-cookie "httponly" nil "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil])
- (".oschina.net"
-  [url-cookie "HttpOnly" nil "22-Aug-2018 01:56:02.00 GMT" "/" ".oschina.net" nil]
-  [url-cookie "_user_behavior_" "7b7f7d3d-f4f9-484a-aea7-fa9b7d1c81fa" "22-Aug-2018 01:56:02.00 GMT" "/" ".oschina.net" nil])
- ("v.ku6.com"
-  [url-cookie "vuid" "egshF1l5oflOQhlTqmPOAg==" "26 Aug 17 08:19:05 [GMT]" "/" "v.ku6.com" nil])
- ("ttlsa.com"
-  [url-cookie "uid" "Zclsf1l1WIGoN0jxBkoKAg==" "24 Jul 18 02:16:33 [GMT]" "/" "ttlsa.com" nil])
- ("bing.com"
-  [url-cookie "_EDGE_V" "1" "22-May-2019 08:25:04.00 GMT" "/" "bing.com" nil]
-  [url-cookie "MUID" "2963F0157152693E2531FA9F70F368AE" "22-May-2019 08:25:04.00 GMT" "/" "bing.com" nil])
- (".stackoverflow.com"
-  [url-cookie "prov" "f0900866-7de6-1ac3-216b-ea1a3375c953" "01-Jan-2055 00:00:00.00 GMT" "/" ".stackoverflow.com" nil]
-  [url-cookie "HttpOnly" nil "01-Jan-2055 00:00:00.00 GMT" "/" ".stackoverflow.com" nil])
- (".720ta.com"
-  [url-cookie "__cfduid" "d16162efe952fda5d6589b0986fba6d431501145340" "27 Jul 18 08:49:00 [GMT]" "/" ".720ta.com" nil]
-  [url-cookie "HttpOnly" nil "27 Jul 18 08:49:00 [GMT]" "/" ".720ta.com" nil])
- ("news.hiapk.com"
-  [url-cookie "Max-Age" "2592000" "26-Aug-2017 08:57:19.00 GMT" "/internet/" "news.hiapk.com" nil]
-  [url-cookie "qingting_firstuser_30day" "1501145839" "26-Aug-2017 08:57:19.00 GMT" "/internet/" "news.hiapk.com" nil])
- (".baidu.com"
-  [url-cookie "BAIDUID" "9DF36010D6A054B5EEAC7618ADAA5530:FG=1" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
-  [url-cookie "max-age" "2147483647" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
-  [url-cookie "BIDUPSID" "9DF36010D6A054B5EEAC7618ADAA5530" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
-  [url-cookie "PSTM" "1501221406" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil])
+ '((".bing.com"
+  [url-cookie "SRCHUSR" "DOB=20170522" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil]
+  [url-cookie "SRCHD" "AF=NOFORM" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil])
+ ("blog.csdn.net"
+  [url-cookie "avh" "8922826%2c8923067%2c8923725%2c8924889" "23-Aug-2017 04:51:27.00 GMT" "/" "blog.csdn.net" nil]
+  [url-cookie "uuid" "694ee236-e4f3-4238-80d7-db32df6eaa61" "24-Aug-2017 03:21:52.00 GMT" "/" "blog.csdn.net" nil]
+  [url-cookie "scvh" "2013-05-15+13%3a45%3a02+057" "23-Aug-2017 04:21:52.00 GMT" "/" "blog.csdn.net" nil])
+ (".68idc.cn"
+  [url-cookie "HttpOnly" nil "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil]
+  [url-cookie "yunsuo_session_verify" "582ff14b0c4bf12a566b40d086aab45d" "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil])
+ ("studygolang.com"
+  [url-cookie "HttpOnly" nil "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil]
+  [url-cookie "Max-Age" "2592000" "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil]
+  [url-cookie "user" "MTUwMTU1OTM5M3xEdi1CQkFFQ180SUFBUkFCRUFBQUp2LUNBQUVHYzNSeWFXNW5EQXNBQ1VsT1JFVllYMVJCUWdaemRISnBibWNNQlFBRFlXeHN8gQZWFnZKaEYkrb1UeZd0gmo_Gmr0dTgbY6qZLe0rZqE=" "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil])
  ("www.baidu.com"
   [url-cookie "NOJS" "1" "21-Jul-2047 05:56:51.00 GMT" "/" "www.baidu.com" nil])
- ("studygolang.com"
-  [url-cookie "user" "MTUwMTU1OTM5M3xEdi1CQkFFQ180SUFBUkFCRUFBQUp2LUNBQUVHYzNSeWFXNW5EQXNBQ1VsT1JFVllYMVJCUWdaemRISnBibWNNQlFBRFlXeHN8gQZWFnZKaEYkrb1UeZd0gmo_Gmr0dTgbY6qZLe0rZqE=" "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil]
-  [url-cookie "Max-Age" "2592000" "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil]
-  [url-cookie "HttpOnly" nil "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil])
- (".68idc.cn"
-  [url-cookie "yunsuo_session_verify" "582ff14b0c4bf12a566b40d086aab45d" "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil]
-  [url-cookie "HttpOnly" nil "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil])
- ("blog.csdn.net"
-  [url-cookie "uuid" "9a3316be-7654-42b2-8bb0-cbc848666ea5" "23-Aug-2017 01:58:13.00 GMT" "/" "blog.csdn.net" nil]
-  [url-cookie "avh" "1728378" "22-Aug-2017 09:09:54.00 GMT" "/" "blog.csdn.net" nil])
- (".bing.com"
-  [url-cookie "SRCHD" "AF=NOFORM" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil]
-  [url-cookie "SRCHUSR" "DOB=20170522" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil]))
+ (".baidu.com"
+  [url-cookie "PSTM" "1501221406" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
+  [url-cookie "BIDUPSID" "9DF36010D6A054B5EEAC7618ADAA5530" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
+  [url-cookie "max-age" "2147483647" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
+  [url-cookie "BAIDUID" "9DF36010D6A054B5EEAC7618ADAA5530:FG=1" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil])
+ ("news.hiapk.com"
+  [url-cookie "qingting_firstuser_30day" "1501145839" "26-Aug-2017 08:57:19.00 GMT" "/internet/" "news.hiapk.com" nil]
+  [url-cookie "Max-Age" "2592000" "26-Aug-2017 08:57:19.00 GMT" "/internet/" "news.hiapk.com" nil])
+ (".720ta.com"
+  [url-cookie "HttpOnly" nil "27 Jul 18 08:49:00 [GMT]" "/" ".720ta.com" nil]
+  [url-cookie "__cfduid" "d16162efe952fda5d6589b0986fba6d431501145340" "27 Jul 18 08:49:00 [GMT]" "/" ".720ta.com" nil])
+ (".stackoverflow.com"
+  [url-cookie "HttpOnly" nil "01-Jan-2055 00:00:00.00 GMT" "/" ".stackoverflow.com" nil]
+  [url-cookie "prov" "f0900866-7de6-1ac3-216b-ea1a3375c953" "01-Jan-2055 00:00:00.00 GMT" "/" ".stackoverflow.com" nil])
+ ("bing.com"
+  [url-cookie "MUID" "2963F0157152693E2531FA9F70F368AE" "22-May-2019 08:25:04.00 GMT" "/" "bing.com" nil]
+  [url-cookie "_EDGE_V" "1" "22-May-2019 08:25:04.00 GMT" "/" "bing.com" nil])
+ ("ttlsa.com"
+  [url-cookie "uid" "Zclsf1l1WIGoN0jxBkoKAg==" "24 Jul 18 02:16:33 [GMT]" "/" "ttlsa.com" nil])
+ ("v.ku6.com"
+  [url-cookie "vuid" "egshF1l5oflOQhlTqmPOAg==" "26 Aug 17 08:19:05 [GMT]" "/" "v.ku6.com" nil])
+ (".oschina.net"
+  [url-cookie "_user_behavior_" "7b7f7d3d-f4f9-484a-aea7-fa9b7d1c81fa" "22-Aug-2018 01:56:02.00 GMT" "/" ".oschina.net" nil]
+  [url-cookie "HttpOnly" nil "22-Aug-2018 01:56:02.00 GMT" "/" ".oschina.net" nil])
+ ("cn.bing.com"
+  [url-cookie "httponly" nil "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
+  [url-cookie "MUIDB" "2963F0157152693E2531FA9F70F368AE" "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
+  [url-cookie "SRCHUID" "V=2&GUID=5E47084CA19C4FA08D98C1C0EFB3E13D" "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]))
 )
 (setq url-cookie-secure-storage
- '(("en.wikipedia.org"
-  [url-cookie "HttpOnly" nil "Fri, 25 Aug 2017 00:00:00 GMT" "/" "en.wikipedia.org" t]
-  [url-cookie "WMF-Last-Access" "24-Jul-2017" "Fri, 25 Aug 2017 00:00:00 GMT" "/" "en.wikipedia.org" t])
+ '((".wikipedia.org"
+  [url-cookie "WMF-Last-Access-Global" "24-Jul-2017" "Fri, 25 Aug 2017 00:00:00 GMT" "/" ".wikipedia.org" t]
+  [url-cookie "HttpOnly" nil "Fri, 25 Aug 2017 00:00:00 GMT" "/" ".wikipedia.org" t])
  (".github.com"
-  [url-cookie "logged_in" "no" "Fri, 24 Jul 2037 03:47:40 -0000" "/" ".github.com" t]
-  [url-cookie "HttpOnly" nil "Fri, 24 Jul 2037 03:47:40 -0000" "/" ".github.com" t])
- (".wikipedia.org"
-  [url-cookie "HttpOnly" nil "Fri, 25 Aug 2017 00:00:00 GMT" "/" ".wikipedia.org" t]
-  [url-cookie "WMF-Last-Access-Global" "24-Jul-2017" "Fri, 25 Aug 2017 00:00:00 GMT" "/" ".wikipedia.org" t]))
+  [url-cookie "HttpOnly" nil "Fri, 24 Jul 2037 03:47:40 -0000" "/" ".github.com" t]
+  [url-cookie "logged_in" "no" "Fri, 24 Jul 2037 03:47:40 -0000" "/" ".github.com" t])
+ ("en.wikipedia.org"
+  [url-cookie "WMF-Last-Access" "24-Jul-2017" "Fri, 25 Aug 2017 00:00:00 GMT" "/" "en.wikipedia.org" t]
+  [url-cookie "HttpOnly" nil "Fri, 25 Aug 2017 00:00:00 GMT" "/" "en.wikipedia.org" t]))
 )
 
 ;; Local Variables:

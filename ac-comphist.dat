@@ -1,4 +1,6 @@
-((("CurrentPlayCount" .
+((("init-keymap-common" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("CurrentPlayCount" .
    [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("play" .
    [1 0 0 0])
@@ -439,4 +441,6 @@
   ("StatusPlay" .
    [0 0 0 0 0 1 0 0 0 0])
   ("TIME_CALL_SCORE" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])))
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("elpy-goto-definition" .
+   [0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0])))

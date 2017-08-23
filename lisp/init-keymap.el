@@ -12,15 +12,6 @@
     (set-window-buffer (next-window) (current-buffer))
     (other-window -2)))
 
-;;(defun show-recent-open-files()
-;;  (interactive)
-;;  (select-window-5)
-;;  (recentf-open-files)
-;;  (rename-uniquely)
-;;  (select-window-6)
-;;  (recentf-open-files)
-;;  (rename-uniquely))
-
 ;; --- Leader Key ----
 (require 'evil-leader)
 (global-evil-leader-mode)
@@ -87,22 +78,18 @@
 
   ;; -- code browser
   "ed" 'ecb-dired-directory-other-window
-  "eg" 'ecb-grep-find-directory
+  "egr" 'ecb-grep-find-directory
   "gr" 'grep
 
   ;; -- go --
-  ;;"ga" 'go-goto-arguments
-  ;;"gd" 'go-goto-docstring
-  ;;"gf" 'go-goto-function
-  ;;"gn" 'go-goto-function-name
-  ;;"gv" 'go-goto-return-values
-  ;;"gm" 'go-goto-method-receiver
-  ;;"gofmt" 'gofmt
   "gd" 'godef-jump
+
+  ;; python
+  "egd" 'elpy-goto-definition
 
   ;; -- cpp ------
   "cfd" 'cscope-find-global-definition ;;搜索定义
-  "cfs" 'cscope-find-this-symbol'
+  "cfs" 'cscope-find-this-symbol
 
   ;; --- eww -----
   "ew" 'eww
