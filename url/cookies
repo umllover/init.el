@@ -6,6 +6,9 @@
   [url-cookie "SRCHUID" "V=2&GUID=5E47084CA19C4FA08D98C1C0EFB3E13D" "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
   [url-cookie "MUIDB" "2963F0157152693E2531FA9F70F368AE" "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
   [url-cookie "httponly" nil "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil])
+ (".oschina.net"
+  [url-cookie "HttpOnly" nil "22-Aug-2018 01:56:02.00 GMT" "/" ".oschina.net" nil]
+  [url-cookie "_user_behavior_" "7b7f7d3d-f4f9-484a-aea7-fa9b7d1c81fa" "22-Aug-2018 01:56:02.00 GMT" "/" ".oschina.net" nil])
  ("v.ku6.com"
   [url-cookie "vuid" "egshF1l5oflOQhlTqmPOAg==" "26 Aug 17 08:19:05 [GMT]" "/" "v.ku6.com" nil])
  ("ttlsa.com"
@@ -37,8 +40,8 @@
   [url-cookie "yunsuo_session_verify" "582ff14b0c4bf12a566b40d086aab45d" "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil]
   [url-cookie "HttpOnly" nil "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil])
  ("blog.csdn.net"
-  [url-cookie "uuid" "f22f5a68-30cd-4589-8ed1-1618758035b5" "12-Aug-2017 08:45:36.00 GMT" "/" "blog.csdn.net" nil]
-  [url-cookie "avh" "5959468" "11-Aug-2017 09:45:36.00 GMT" "/" "blog.csdn.net" nil])
+  [url-cookie "uuid" "9a3316be-7654-42b2-8bb0-cbc848666ea5" "23-Aug-2017 01:58:13.00 GMT" "/" "blog.csdn.net" nil]
+  [url-cookie "avh" "1728378" "22-Aug-2017 09:09:54.00 GMT" "/" "blog.csdn.net" nil])
  (".bing.com"
   [url-cookie "SRCHD" "AF=NOFORM" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil]
   [url-cookie "SRCHUSR" "DOB=20170522" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil]))
