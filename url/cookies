@@ -5,10 +5,10 @@
  '((".bing.com"
   [url-cookie "SRCHUSR" "DOB=20170522" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil]
   [url-cookie "SRCHD" "AF=NOFORM" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil])
+ (".douban.com"
+  [url-cookie "bid" "dB8R4PiCIdw" "23 Aug 18 07:26:31 [GMT]" "/" ".douban.com" nil])
  ("blog.csdn.net"
-  [url-cookie "avh" "8922826%2c8923067%2c8923725%2c8924889" "23-Aug-2017 04:51:27.00 GMT" "/" "blog.csdn.net" nil]
-  [url-cookie "uuid" "694ee236-e4f3-4238-80d7-db32df6eaa61" "24-Aug-2017 03:21:52.00 GMT" "/" "blog.csdn.net" nil]
-  [url-cookie "scvh" "2013-05-15+13%3a45%3a02+057" "23-Aug-2017 04:21:52.00 GMT" "/" "blog.csdn.net" nil])
+  [url-cookie "uuid" "694ee236-e4f3-4238-80d7-db32df6eaa61" "24-Aug-2017 03:21:52.00 GMT" "/" "blog.csdn.net" nil])
  (".68idc.cn"
   [url-cookie "HttpOnly" nil "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil]
   [url-cookie "yunsuo_session_verify" "582ff14b0c4bf12a566b40d086aab45d" "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil])
