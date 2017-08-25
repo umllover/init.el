@@ -26,6 +26,8 @@
   "ff" 'find-file
   "fow" 'find-file-other-window
   "rf" 'recentf-open-files
+  ;; --- dir ---
+  "md" 'mkdir
   ;; -- dired
   "dir" 'dired
   ;; ---Buffer----

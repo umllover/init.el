@@ -35,6 +35,7 @@
 (global-set-key (kbd "\'") 'skeleton-pair-insert-maybe)    
 (global-set-key (kbd "\"") 'skeleton-pair-insert-maybe)    
 (global-set-key (kbd "[") 'skeleton-pair-insert-maybe)    
+(global-set-key (kbd "<") 'skeleton-pair-insert-maybe)    
 
 
 ;;自动插入匹配的括号
