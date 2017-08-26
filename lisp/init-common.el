@@ -71,7 +71,12 @@
    (quote
     (flycheck go-autocomplete go-mode graphviz-dot-mode ecb xcscope auto-complete evil evil-leader smooth-scrolling hungry-delete swiper counsel smartparens elpy web-mode js2-mode monokai-theme ace-link window-numbering))))
 
+(setq doc-view-ghostscript-program "gswin64c")
+
+(global-auto-complete-mode t)
+
 ;; theme
 (load-theme 'monokai 1)
+
 
 (provide 'init-common)
