@@ -12,9 +12,14 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 
-(require 'init-common)
-(require 'init-org)
 (require 'init-package)
+(require 'init-common)
+(require 'init-autocomplete)
+(require 'init-langs)
+(require 'init-keymap)
+(require 'init-org)
+;;(require 'file-search)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

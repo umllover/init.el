@@ -51,3 +51,13 @@ go build
 ./gameApp.exe
 ls
 find --help
+ls
+git log
+ls
+ls
+ssh root@192.168.1.36
+ssh
+git
+ls
+git log
+git pull
