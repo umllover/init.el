@@ -131,5 +131,7 @@
   (let ((explicit-shell-file-name "C:/Program Files (x86)/Git/git-bash"))
     (call-interactively 'shell)))
 
+(global-auto-complete-mode t)
+
 
 (provide 'init-common)
