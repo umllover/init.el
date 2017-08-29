@@ -114,7 +114,7 @@
 (global-set-key "\C-s" 'swiper)
 (global-set-key "\C-i" 'semantic-ia-complete-symbol-menu)
 
-(add-hook 'ecb-activate-hook 'recentf-open-files)
+;;(add-hook 'ecb-activate-hook 'recentf-open-files)
 (add-hook 'ecb-activate-hook 'split-window-to-four)
 
 (provide 'init-keymap)

@@ -32,7 +32,7 @@
  
 ;; recent open files
 (require 'recentf)
-(recentf-mode 1)
+;;(recentf-mode 1)
 (setq recentf-max-menu-item 10)
  
 (delete-selection-mode 1)
