@@ -36,6 +36,8 @@
        window-numbering
        ;; -- c/c++
        xcscope
+       ;; -- go --
+       go-mode
        ;; -- git ---
        magit) "Default packages")
 
