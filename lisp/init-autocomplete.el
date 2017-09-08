@@ -1,7 +1,6 @@
 
 ;; -- auto complete
 (require 'auto-complete-config)
-(ac-config-default)
 (global-auto-complete-mode t)
 (ac-config-default)
 (setq ac-use-menu-map t)

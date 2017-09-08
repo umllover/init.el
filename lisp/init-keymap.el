@@ -28,8 +28,6 @@
   "rf" 'recentf-open-files
   ;; --- dir ---
   "md" 'mkdir
-  ;; -- dired
-  "dir" 'dired
   ;; ---Buffer----
   "sb" 'save-buffer
   "stb" 'switch-to-buffer

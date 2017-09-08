@@ -5,15 +5,13 @@
  '((".bing.com"
   [url-cookie "SRCHUSR" "DOB=20170522" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil]
   [url-cookie "SRCHD" "AF=NOFORM" "22-May-2019 08:25:04.00 GMT" "/" ".bing.com" nil])
+ (".github.com"
+  [url-cookie "_octo" "GH1.1.1464275184.1504248571" "Sun, 01 Sep 2019 06:49:31 -0000" "/" ".github.com" nil])
  (".douban.com"
   [url-cookie "bid" "dB8R4PiCIdw" "23 Aug 18 07:26:31 [GMT]" "/" ".douban.com" nil])
  (".68idc.cn"
   [url-cookie "HttpOnly" nil "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil]
   [url-cookie "yunsuo_session_verify" "582ff14b0c4bf12a566b40d086aab45d" "02 Aug 22 00:13:22 [GMT]" "/" ".68idc.cn" nil])
- ("studygolang.com"
-  [url-cookie "HttpOnly" nil "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil]
-  [url-cookie "Max-Age" "2592000" "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil]
-  [url-cookie "user" "MTUwMTU1OTM5M3xEdi1CQkFFQ180SUFBUkFCRUFBQUp2LUNBQUVHYzNSeWFXNW5EQXNBQ1VsT1JFVllYMVJCUWdaemRISnBibWNNQlFBRFlXeHN8gQZWFnZKaEYkrb1UeZd0gmo_Gmr0dTgbY6qZLe0rZqE=" "Thu, 31 Aug 2017 03:49:53 GMT" "/" "studygolang.com" nil])
  ("www.baidu.com"
   [url-cookie "NOJS" "1" "21-Jul-2047 05:56:51.00 GMT" "/" "www.baidu.com" nil])
  (".baidu.com"
@@ -35,8 +33,6 @@
  (".oschina.net"
   [url-cookie "_user_behavior_" "7b7f7d3d-f4f9-484a-aea7-fa9b7d1c81fa" "22-Aug-2018 01:56:02.00 GMT" "/" ".oschina.net" nil]
   [url-cookie "HttpOnly" nil "22-Aug-2018 01:56:02.00 GMT" "/" ".oschina.net" nil])
- ("blog.csdn.net"
-  [url-cookie "uuid" "05f07ad5-380e-4f82-b915-7d7fb079421b" "31-Aug-2017 02:36:34.00 GMT" "/" "blog.csdn.net" nil])
  ("cn.bing.com"
   [url-cookie "httponly" nil "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
   [url-cookie "MUIDB" "2963F0157152693E2531FA9F70F368AE" "22-May-2019 08:25:04.00 GMT" "/" "cn.bing.com" nil]
