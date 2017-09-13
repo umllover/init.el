@@ -27,6 +27,7 @@
   "fow" 'find-file-other-window
   "rf" 'recentf-open-files
   ;; --- dir ---
+  "dir" 'dired
   "md" 'mkdir
   ;; ---Buffer----
   "sb" 'save-buffer
@@ -88,8 +89,8 @@
   "egd" 'elpy-goto-definition
 
   ;; -- cpp ------
-  "cfd" 'cscope-find-global-definition ;;搜索定义
-  "cfs" 'cscope-find-this-symbol
+  "cd" 'cscope-find-global-definition ;;搜索定义
+  "cs" 'cscope-find-this-symbol
 
   ;; --- eww -----
   "ew" 'eww
